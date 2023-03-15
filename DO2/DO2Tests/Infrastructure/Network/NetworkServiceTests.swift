@@ -36,4 +36,28 @@ final class NetworkServiceTests: XCTestCase {
     private enum NetworkErrorMock: Error {
         case someError
     }
+
+    func test_whenMockDataPassed_shouldReturnProperResponse() async {
+        // given
+        let config = NetworkConfigurableMock()
+
+        let expectation = self.expectation(description: "Should return correct data")
+        let expectedResponseData = "Response data".data(using: .utf8)!
+        let sessionManager = NetworkSessionManagerMock(response: HTTPURLResponse(),
+                                                       data: expectedResponseData,
+                                                       error: nil,
+                                                       expectation: expectation)
+        let sut = NetworkService(config: config,
+                                 sessionManager: sessionManager)
+        // when
+        do {
+            let result = try sut.request(endpoint: EndpointMock(path: "http://mock.test.com", method: .get))
+            let (data, _) = try await result.value
+            XCTAssertEqual(data, expectedResponseData)
+        } catch {
+            XCTFail("Should return proper response")
+        }
+        // then
+        await waitForExpectations(timeout: 0.1, handler: nil)
+    }
 }
