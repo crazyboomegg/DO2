@@ -60,4 +60,29 @@ final class NetworkServiceTests: XCTestCase {
         // then
         await waitForExpectations(timeout: 0.1, handler: nil)
     }
+
+    func test_whenErrorWithNSURLErrorCancelledReturned_shouldReturnCancelledError() async {
+        // given
+        let config = NetworkConfigurableMock()
+        let expectation = self.expectation(description: "Should return hasStatusCode error")
+        let cancelledError = NSError(domain: "network", code: NSURLErrorCancelled, userInfo: nil)
+        let networkSessionMock = NetworkSessionManagerMock(response: nil,
+                                                           data: nil,
+                                                           error: cancelledError as Error,
+                                                           expectation: expectation)
+        let sut = NetworkService(config: config, sessionManager: networkSessionMock)
+        // when
+        do {
+            let result = try sut.request(endpoint: EndpointMock(path: "http://mock.test.com", method: .get))
+            let (_, _) = try await result.value
+            XCTFail("Should not happen")
+        } catch {
+            guard case NetworkError.cancelled = error else {
+                XCTFail("NetworkError.cancelled not found")
+                return
+            }
+        }
+        // then
+        await waitForExpectations(timeout: 0.1, handler: nil)
+    }
 }
