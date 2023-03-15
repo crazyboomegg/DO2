@@ -35,6 +35,20 @@ final class DataTransferServiceTests: XCTestCase {
         wait(for: [expectation], timeout: 3)
     }
 
+    func testReceivedInvalidResponse_decodeNoObjectThrowError() async {
+        let expectation = expectation(description: "Should throw error of network")
+        let sut = makeSUT(mockData: #"{"gender": "man"}"#)
+        // when
+        do {
+            let mockEndpoint = Endpoint<MockResponseData>(path: "https://mock.endpoint.com", method: .get)
+            let _: MockResponseData = try await sut.request(with: mockEndpoint)
+            XCTFail("Should not successfully decode data")
+        } catch {
+            expectation.fulfill()
+        }
+        // result
+        wait(for: [expectation], timeout: 3)
+    }
     // MARK: - Helper
     private func makeSUT(mockData: String) -> DataTransferServiceType {
         // given
