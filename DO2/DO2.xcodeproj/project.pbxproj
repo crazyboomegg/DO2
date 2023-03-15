@@ -18,6 +18,7 @@
 		21ECF90529C2769B00C02C65 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */; };
 		21ECF90929C2773300C02C65 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */; };
 		21ECF90B29C2776200C02C65 /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */; };
+		21ECF90D29C2790000C02C65 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90C29C2790000C02C65 /* NetworkServiceTests.swift */; };
 		7DA43D1D29C0BD8500B65372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */; };
 		7DA43D1F29C0BD8500B65372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */; };
 		7DA43D2129C0BD8500B65372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D2029C0BD8500B65372 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
 		21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
 		21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		21ECF90C29C2790000C02C65 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		7DA43D1929C0BD8500B65372 /* DO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				21ECF90729C2772C00C02C65 /* Mocks */,
 				21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */,
+				21ECF90C29C2790000C02C65 /* NetworkServiceTests.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				21ECF90B29C2776200C02C65 /* NetworkConfigurableMock.swift in Sources */,
 				21ECF90529C2769B00C02C65 /* DataTransferServiceTests.swift in Sources */,
+				21ECF90D29C2790000C02C65 /* NetworkServiceTests.swift in Sources */,
 				21ECF90929C2773300C02C65 /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
