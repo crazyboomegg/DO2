@@ -15,6 +15,9 @@
 		21ECF8F929C2739C00C02C65 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8F829C2739C00C02C65 /* DataTransferService.swift */; };
 		21ECF8FD29C273D800C02C65 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8FC29C273D800C02C65 /* Encodable.swift */; };
 		21ECF8FF29C273F900C02C65 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8FE29C273F900C02C65 /* Dictionary.swift */; };
+		21ECF90529C2769B00C02C65 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */; };
+		21ECF90929C2773300C02C65 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */; };
+		21ECF90B29C2776200C02C65 /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */; };
 		7DA43D1D29C0BD8500B65372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */; };
 		7DA43D1F29C0BD8500B65372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */; };
 		7DA43D2129C0BD8500B65372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D2029C0BD8500B65372 /* ViewController.swift */; };
@@ -43,6 +46,9 @@
 		21ECF8F829C2739C00C02C65 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		21ECF8FC29C273D800C02C65 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		21ECF8FE29C273F900C02C65 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
+		21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
 		7DA43D1929C0BD8500B65372 /* DO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 		21ECF8E429C2723200C02C65 /* DO2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				21ECF90229C2768000C02C65 /* Infrastructure */,
 			);
 			path = DO2Tests;
 			sourceTree = "<group>";
@@ -138,9 +145,34 @@
 			children = (
 				7DA43D2529C0BD8800B65372 /* Assets.xcassets */,
 				7DA43D2729C0BD8800B65372 /* LaunchScreen.storyboard */,
-				7DA43D2A29C0BD8800B65372 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		21ECF90229C2768000C02C65 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				21ECF90329C2768800C02C65 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		21ECF90329C2768800C02C65 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				21ECF90729C2772C00C02C65 /* Mocks */,
+				21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		21ECF90729C2772C00C02C65 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */,
+				21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		7DA43D1029C0BD8400B65372 = {
@@ -170,6 +202,7 @@
 				21ECF90129C2747000C02C65 /* Resources */,
 				7DA43D2029C0BD8500B65372 /* ViewController.swift */,
 				7DA43D2229C0BD8500B65372 /* Main.storyboard */,
+				7DA43D2A29C0BD8800B65372 /* Info.plist */,
 			);
 			path = DO2;
 			sourceTree = "<group>";
@@ -224,6 +257,7 @@
 				TargetAttributes = {
 					21ECF8E229C2723200C02C65 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 						TestTargetID = 7DA43D1829C0BD8400B65372;
 					};
 					7DA43D1829C0BD8400B65372 = {
@@ -275,6 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21ECF90B29C2776200C02C65 /* NetworkConfigurableMock.swift in Sources */,
+				21ECF90529C2769B00C02C65 /* DataTransferServiceTests.swift in Sources */,
+				21ECF90929C2773300C02C65 /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,11 +368,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7QN4P34VRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = owenkao.DO2Tests;
@@ -343,6 +386,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DO2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DO2";
@@ -354,11 +398,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7QN4P34VRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = owenkao.DO2Tests;
