@@ -85,4 +85,33 @@ final class NetworkServiceTests: XCTestCase {
         // then
         await waitForExpectations(timeout: 0.1, handler: nil)
     }
+
+    func test_whenStatusCodeEqualOrAbove400_shouldReturnhasStatusCodeError() async {
+        // given
+        let config = NetworkConfigurableMock()
+        let expectation = self.expectation(description: "Should return hasStatusCode error")
+        let data = "Response data".data(using: .utf8)!
+        let response = HTTPURLResponse(url: URL(string: "test_url")!,
+                                       statusCode: 500,
+                                       httpVersion: "1.1",
+                                       headerFields: [:])
+        let sut = NetworkService(config: config,
+                                 sessionManager: NetworkSessionManagerMock(response: response,
+                                                                           data: data,
+                                                                           error: NetworkErrorMock.someError,
+                                                                           expectation: nil))
+        // when
+        do {
+            let result = try sut.request(endpoint: EndpointMock(path: "http://mock.test.com", method: .get))
+            let (_, _) = try await result.value
+            XCTFail("Should not happen")
+        } catch {
+            if case let NetworkError.error(statusCode, _) = error {
+                XCTAssertEqual(statusCode, 500)
+            }
+            expectation.fulfill()
+        }
+        // then
+        wait(for: [expectation], timeout: 0.1)
+    }
 }
