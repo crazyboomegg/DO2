@@ -7,22 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21ECF8EF29C2729E00C02C65 /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8EE29C2729E00C02C65 /* NetworkServiceType.swift */; };
-		21ECF8F129C272C200C02C65 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8F029C272C200C02C65 /* Endpoint.swift */; };
-		21ECF8F329C2731400C02C65 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8F229C2731400C02C65 /* NetworkService.swift */; };
-		21ECF8F529C2734600C02C65 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8F429C2734600C02C65 /* NetworkConfig.swift */; };
-		21ECF8F729C2737800C02C65 /* DataTransferServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8F629C2737800C02C65 /* DataTransferServiceType.swift */; };
-		21ECF8F929C2739C00C02C65 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8F829C2739C00C02C65 /* DataTransferService.swift */; };
-		21ECF8FD29C273D800C02C65 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8FC29C273D800C02C65 /* Encodable.swift */; };
-		21ECF8FF29C273F900C02C65 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF8FE29C273F900C02C65 /* Dictionary.swift */; };
-		21ECF90529C2769B00C02C65 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */; };
-		21ECF90929C2773300C02C65 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */; };
-		21ECF90B29C2776200C02C65 /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */; };
-		21ECF90D29C2790000C02C65 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECF90C29C2790000C02C65 /* NetworkServiceTests.swift */; };
+		21C03D4029C3732000097483 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 21C03D3F29C3732000097483 /* GoogleMaps */; };
+		21C03D4229C3737C00097483 /* MapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 21C03D4129C3737C00097483 /* MapStyle.json */; };
 		7DA43D1D29C0BD8500B65372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */; };
 		7DA43D1F29C0BD8500B65372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */; };
 		7DA43D2129C0BD8500B65372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D2029C0BD8500B65372 /* ViewController.swift */; };
-		7DA43D2429C0BD8500B65372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA43D2229C0BD8500B65372 /* Main.storyboard */; };
 		7DA43D2629C0BD8800B65372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DA43D2529C0BD8800B65372 /* Assets.xcassets */; };
 		7DA43D2929C0BD8800B65372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA43D2729C0BD8800B65372 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,24 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21C03D4129C3737C00097483 /* MapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapStyle.json; sourceTree = "<group>"; };
 		21ECF8E329C2723200C02C65 /* DO2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DO2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21ECF8EE29C2729E00C02C65 /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
-		21ECF8F029C272C200C02C65 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		21ECF8F229C2731400C02C65 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		21ECF8F429C2734600C02C65 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
-		21ECF8F629C2737800C02C65 /* DataTransferServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceType.swift; sourceTree = "<group>"; };
-		21ECF8F829C2739C00C02C65 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
-		21ECF8FC29C273D800C02C65 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
-		21ECF8FE29C273F900C02C65 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
-		21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
-		21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
-		21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
-		21ECF90C29C2790000C02C65 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		7DA43D1929C0BD8500B65372 /* DO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7DA43D2029C0BD8500B65372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7DA43D2329C0BD8500B65372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DA43D2529C0BD8800B65372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DA43D2829C0BD8800B65372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DA43D2A29C0BD8800B65372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,64 +50,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C03D4029C3732000097483 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21ECF8DE29C2708900C02C65 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF8EC29C2727B00C02C65 /* Interface */,
-				21ECF8ED29C2728000C02C65 /* Network */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
 		21ECF8E429C2723200C02C65 /* DO2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				21ECF90229C2768000C02C65 /* Infrastructure */,
 			);
 			path = DO2Tests;
-			sourceTree = "<group>";
-		};
-		21ECF8EC29C2727B00C02C65 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF8EE29C2729E00C02C65 /* NetworkServiceType.swift */,
-				21ECF8F629C2737800C02C65 /* DataTransferServiceType.swift */,
-			);
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		21ECF8ED29C2728000C02C65 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF8F229C2731400C02C65 /* NetworkService.swift */,
-				21ECF8F429C2734600C02C65 /* NetworkConfig.swift */,
-				21ECF8F829C2739C00C02C65 /* DataTransferService.swift */,
-				21ECF8F029C272C200C02C65 /* Endpoint.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		21ECF8FA29C273BF00C02C65 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF8FB29C273CA00C02C65 /* Extension */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		21ECF8FB29C273CA00C02C65 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF8FC29C273D800C02C65 /* Encodable.swift */,
-				21ECF8FE29C273F900C02C65 /* Dictionary.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		21ECF90029C2745B00C02C65 /* Application */ = {
@@ -147,35 +78,9 @@
 			children = (
 				7DA43D2529C0BD8800B65372 /* Assets.xcassets */,
 				7DA43D2729C0BD8800B65372 /* LaunchScreen.storyboard */,
+				21C03D4129C3737C00097483 /* MapStyle.json */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		21ECF90229C2768000C02C65 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF90329C2768800C02C65 /* Network */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		21ECF90329C2768800C02C65 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF90729C2772C00C02C65 /* Mocks */,
-				21ECF90429C2769B00C02C65 /* DataTransferServiceTests.swift */,
-				21ECF90C29C2790000C02C65 /* NetworkServiceTests.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		21ECF90729C2772C00C02C65 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				21ECF90829C2773300C02C65 /* NetworkSessionManagerMock.swift */,
-				21ECF90A29C2776200C02C65 /* NetworkConfigurableMock.swift */,
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 		7DA43D1029C0BD8400B65372 = {
@@ -200,11 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				21ECF90029C2745B00C02C65 /* Application */,
-				21ECF8FA29C273BF00C02C65 /* Common */,
-				21ECF8DE29C2708900C02C65 /* Infrastructure */,
 				21ECF90129C2747000C02C65 /* Resources */,
 				7DA43D2029C0BD8500B65372 /* ViewController.swift */,
-				7DA43D2229C0BD8500B65372 /* Main.storyboard */,
 				7DA43D2A29C0BD8800B65372 /* Info.plist */,
 			);
 			path = DO2;
@@ -244,6 +146,9 @@
 			dependencies = (
 			);
 			name = DO2;
+			packageProductDependencies = (
+				21C03D3F29C3732000097483 /* GoogleMaps */,
+			);
 			productName = DO2;
 			productReference = 7DA43D1929C0BD8500B65372 /* DO2.app */;
 			productType = "com.apple.product-type.application";
@@ -277,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 7DA43D1029C0BD8400B65372;
+			packageReferences = (
+				21C03D3E29C3732000097483 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
+			);
 			productRefGroup = 7DA43D1A29C0BD8500B65372 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,7 +209,7 @@
 			files = (
 				7DA43D2929C0BD8800B65372 /* LaunchScreen.storyboard in Resources */,
 				7DA43D2629C0BD8800B65372 /* Assets.xcassets in Resources */,
-				7DA43D2429C0BD8500B65372 /* Main.storyboard in Resources */,
+				21C03D4229C3737C00097483 /* MapStyle.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,10 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21ECF90B29C2776200C02C65 /* NetworkConfigurableMock.swift in Sources */,
-				21ECF90529C2769B00C02C65 /* DataTransferServiceTests.swift in Sources */,
-				21ECF90D29C2790000C02C65 /* NetworkServiceTests.swift in Sources */,
-				21ECF90929C2773300C02C65 /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,17 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21ECF8F929C2739C00C02C65 /* DataTransferService.swift in Sources */,
-				21ECF8F529C2734600C02C65 /* NetworkConfig.swift in Sources */,
-				21ECF8EF29C2729E00C02C65 /* NetworkServiceType.swift in Sources */,
-				21ECF8F729C2737800C02C65 /* DataTransferServiceType.swift in Sources */,
-				21ECF8FF29C273F900C02C65 /* Dictionary.swift in Sources */,
 				7DA43D2129C0BD8500B65372 /* ViewController.swift in Sources */,
 				7DA43D1D29C0BD8500B65372 /* AppDelegate.swift in Sources */,
 				7DA43D1F29C0BD8500B65372 /* SceneDelegate.swift in Sources */,
-				21ECF8F329C2731400C02C65 /* NetworkService.swift in Sources */,
-				21ECF8F129C272C200C02C65 /* Endpoint.swift in Sources */,
-				21ECF8FD29C273D800C02C65 /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7DA43D2229C0BD8500B65372 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DA43D2329C0BD8500B65372 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7DA43D2729C0BD8800B65372 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -554,7 +442,6 @@
 				INFOPLIST_FILE = DO2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -582,7 +469,6 @@
 				INFOPLIST_FILE = DO2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -629,6 +515,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21C03D3E29C3732000097483 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21C03D3F29C3732000097483 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21C03D3E29C3732000097483 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DA43D1129C0BD8400B65372 /* Project object */;
 }
