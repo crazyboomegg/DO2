@@ -12,7 +12,7 @@
 		21C03D4229C3737C00097483 /* MapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 21C03D4129C3737C00097483 /* MapStyle.json */; };
 		7DA43D1D29C0BD8500B65372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */; };
 		7DA43D1F29C0BD8500B65372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */; };
-		7DA43D2129C0BD8500B65372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D2029C0BD8500B65372 /* ViewController.swift */; };
+		7DA43D2129C0BD8500B65372 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA43D2029C0BD8500B65372 /* MapViewController.swift */; };
 		7DA43D2629C0BD8800B65372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DA43D2529C0BD8800B65372 /* Assets.xcassets */; };
 		7DA43D2929C0BD8800B65372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA43D2729C0BD8800B65372 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -34,7 +34,7 @@
 		7DA43D1929C0BD8500B65372 /* DO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA43D1C29C0BD8500B65372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DA43D1E29C0BD8500B65372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7DA43D2029C0BD8500B65372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DA43D2029C0BD8500B65372 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7DA43D2529C0BD8800B65372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DA43D2829C0BD8800B65372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DA43D2A29C0BD8800B65372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			children = (
 				21ECF90029C2745B00C02C65 /* Application */,
 				21ECF90129C2747000C02C65 /* Resources */,
-				7DA43D2029C0BD8500B65372 /* ViewController.swift */,
+				7DA43D2029C0BD8500B65372 /* MapViewController.swift */,
 				7DA43D2A29C0BD8800B65372 /* Info.plist */,
 			);
 			path = DO2;
@@ -230,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DA43D2129C0BD8500B65372 /* ViewController.swift in Sources */,
+				7DA43D2129C0BD8500B65372 /* MapViewController.swift in Sources */,
 				7DA43D1D29C0BD8500B65372 /* AppDelegate.swift in Sources */,
 				212CC46029C4C29900A181EA /* AppConfiguration.swift in Sources */,
 				7DA43D1F29C0BD8500B65372 /* SceneDelegate.swift in Sources */,
