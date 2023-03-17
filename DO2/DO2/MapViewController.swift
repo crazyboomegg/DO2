@@ -42,8 +42,8 @@ class MapViewController: UIViewController {
     func showMarker(position: CLLocationCoordinate2D){
             let marker = GMSMarker()
             marker.position = position
-            marker.title = "Title test"
-            marker.snippet = "Snippet test"
+            marker.title = "你渴望"
+            marker.snippet = "吉戰力嗎？"
             marker.map = mapView
         }
 }
@@ -58,20 +58,8 @@ extension MapViewController: GMSMapViewDelegate {
     }
 
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
-        let view = UIView(frame: .init(x: 0, y: 0, width: 150, height: 100))
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 10
-
-        let label = UILabel(frame: .init(x: 10, y: 10, width: 150, height: 20))
-        label.text = marker.title
-        view.addSubview(label)
-        
-        let subtitle = UILabel(frame: .init(x: 10, y: label.frame.height + label.frame.origin.y + 5, width: 150, height: 20))
-        subtitle.text = marker.snippet
-        subtitle.font = .systemFont(ofSize: 14, weight: .light)
-        view.addSubview(subtitle)
-        
+        let markViewModel = MapMarkerViewModel(title: marker.title, subtitle: marker.snippet, image: "Dog")
+        let view = MapMarkerView(frame: .init(x: 0, y: 0, width: 200, height: 100), markViewModel)
         return view
     }
-    
 }
