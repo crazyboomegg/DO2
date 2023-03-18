@@ -8,14 +8,14 @@
 import UIKit
 
 final class MapMarkerView: UIView {
-    convenience init(frame: CGRect, _ model: MapMarkerViewModel) {
+    convenience init(frame: CGRect, _ model: MapMarker.Model) {
         self.init(frame: frame)
         backgroundColor = .white
         layer.cornerRadius = 10
         clipsToBounds = true
 
         let imageView = UIImageView(frame: .init(x: 0, y: 0, width: 100, height: 100))
-        imageView.image = UIImage(named: "Dog")
+        imageView.image = UIImage(named: model.image)
         addSubview(imageView)
 
 

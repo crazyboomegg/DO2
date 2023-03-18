@@ -40,11 +40,8 @@ class MapViewController: UIViewController {
     }
 
     func showMarker(position: CLLocationCoordinate2D){
-        let marker = GMSMarker()
+        let marker = MapMarker(model: .init(title: "你渴望", subtitle: "吉戰力嗎？", image: "Dog"))
         marker.position = position
-        marker.title = "你渴望"
-        marker.snippet = "吉戰力嗎？"
-        marker.icon = UIImage(named: "DOG")
         marker.map = mapView
     }
 }
@@ -59,12 +56,12 @@ extension MapViewController: GMSMapViewDelegate {
     }
 
     func mapView(_ mapView: GMSMapView, didLongPressInfoWindowOf marker: GMSMarker) {
-        print("You press tooooooo long")
+        print("Dude, You press tooooooo long")
     }
 
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
-        let markViewModel = MapMarkerViewModel(title: marker.title, subtitle: marker.snippet, image: marker.icon)
-        let view = MapMarkerView(frame: .init(x: 0, y: 0, width: 200, height: 100), markViewModel)
+        guard let marker = marker as? MapMarker else { return nil }
+        let view = MapMarkerView(frame: .init(x: 0, y: 0, width: 200, height: 100), marker.model)
         return view
     }
 }
