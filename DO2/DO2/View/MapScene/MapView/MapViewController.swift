@@ -48,7 +48,8 @@ class MapViewController: UIViewController {
 
 extension MapViewController: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        let view = MapMarkerDetailViewController()
+        guard let marker = marker as? MapMarker else { return }
+        let view = MapMarkerDetailViewController(marker)
         if let sheet = view.sheetPresentationController {
             sheet.detents = [.medium()]
         }

@@ -103,7 +103,7 @@
 		21F6028629C6284F00CDB562 /* MapScene */ = {
 			isa = PBXGroup;
 			children = (
-				21F6028729C6285A00CDB562 /* MapMarker */,
+				21F6028D29C6592700CDB562 /* MapView */,
 				21F6028929C6288500CDB562 /* MapMarkerDetail */,
 			);
 			path = MapScene;
@@ -124,6 +124,15 @@
 				21F6028A29C628BD00CDB562 /* MapMarkerDetailViewController.swift */,
 			);
 			path = MapMarkerDetail;
+			sourceTree = "<group>";
+		};
+		21F6028D29C6592700CDB562 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				21F6028729C6285A00CDB562 /* MapMarker */,
+				7DA43D2029C0BD8500B65372 /* MapViewController.swift */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 		7DA43D1029C0BD8400B65372 = {
@@ -150,7 +159,6 @@
 				21ECF90029C2745B00C02C65 /* Application */,
 				21F6028129C5109D00CDB562 /* View */,
 				21ECF90129C2747000C02C65 /* Resources */,
-				7DA43D2029C0BD8500B65372 /* MapViewController.swift */,
 				7DA43D2A29C0BD8800B65372 /* Info.plist */,
 			);
 			path = DO2;
