@@ -9,7 +9,7 @@ import UIKit
 import GoogleMaps
 
 class MapViewController: UIViewController {
-    private var mapView: GMSMapView!
+    private var mapView: GMSMapView?
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -17,11 +17,10 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         showMarker(position: CLLocationCoordinate2D(latitude: 23.6978, longitude: 120.9605))
-        mapView.delegate = self
+        mapView?.delegate = self
     }
 
     override func loadView() {
-        
         let camera = GMSCameraPosition.camera(withLatitude: 23.6978, longitude: 120.9605, zoom: 8.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         
@@ -39,7 +38,7 @@ class MapViewController: UIViewController {
         self.mapView = mapView
     }
 
-    func showMarker(position: CLLocationCoordinate2D){
+    private func showMarker(position: CLLocationCoordinate2D) {
         let marker = MapMarker(model: .init(title: "你渴望", subtitle: "吉戰力嗎？", image: "Dog"))
         marker.position = position
         marker.map = mapView
